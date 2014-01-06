@@ -12,11 +12,11 @@ Todos.Todo.FIXTURES = [
   {
     id: 2,
     title: '...',
-    isCompleted: true
+    isCompleted: false
   },
   {
     id: 3,
     title: 'Profit!',
-    isCompleted: true
+    isCompleted: false
   }
 ]
