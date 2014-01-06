@@ -7,7 +7,7 @@ Todos.TodoController = Ember.ObjectController.extend({
     } else {
       model.set('isCompleted', value);
       model.save();
-      return value();
+      return value;
     }
   }.property('model.isCompleted')
 });
