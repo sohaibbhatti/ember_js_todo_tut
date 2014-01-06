@@ -15,21 +15,12 @@
 
         <section id="main">
           <ul id="todo-list">
-            <li class="completed">
-              <input type="checkbox" class="toggle">
-              <label>Learn Ember.js</label><button class="destroy"></button>
-            </li>
-            <li>
-              <input type="checkbox" class="toggle">
-              <label>...</label><button class="destroy"></button>
-            </li>
-            <li>
-              <input type="checkbox" class="toggle">
-              <label>Profit!</label><button class="destroy"></button>
-            </li>
-          </ul>
-
-          <input type="checkbox" id="toggle-all">
+            {{#each}}
+              <li>
+                <input type="checkbox" class="toggle">
+                <label>{{title}}<button class="destroy"></button>
+              </li>
+            {{/each}}
         </section>
 
         <footer id="footer">
